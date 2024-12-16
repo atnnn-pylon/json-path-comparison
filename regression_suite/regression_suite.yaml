@@ -586,6 +586,9 @@ queries:
     document: {"a": "first", "2": "second", "b": "third"}
     consensus: ["second"]
     scalar-consensus: "second"
+  - id: dot_notation_with_number_then_alpha_on_object
+    selector: "$.2a"
+    document: {"2a": 42, "2": 99}
   - id: dot_notation_with_single_quotes
     selector: "$.'key'"
     document: {"key": "value", "'key'": 42}
